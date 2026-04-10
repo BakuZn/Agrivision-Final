@@ -1,0 +1,7 @@
+agrivision/
+│
+├── frontend/
+├── backend/
+├── ml_model/
+├── database/
+├── docker/
