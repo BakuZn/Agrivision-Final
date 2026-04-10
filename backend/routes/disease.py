@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from services.disease_service import predict_disease
-import os
+from services.recommendation_service import get_recommendation
 
 disease_bp = Blueprint('disease', __name__)
 
@@ -15,5 +15,12 @@ def predict():
     file.save(filepath)
 
     result = predict_disease(filepath)
+    recommendation = get_recommendation(
+        result["label"],
+        result["confidence"]
+    )
 
-    return jsonify(result)
+    return jsonify({
+        "prediction": result,
+        "recommendation": recommendation
+    })
