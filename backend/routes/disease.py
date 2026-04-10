@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
-from services.disease_service import predict_disease
-from services.recommendation_service import get_recommendation
+from services.disease_advisory_service import get_prediction_with_recommendation
+from services.file_upload_service import remove_temp_file, save_upload_to_temp
 
 disease_bp = Blueprint('disease', __name__)
 
@@ -10,17 +10,9 @@ def predict():
         return jsonify({"error": "No image uploaded"}), 400
 
     file = request.files['image']
+    filepath = save_upload_to_temp(file)
 
-    filepath = "temp.jpg"
-    file.save(filepath)
-
-    result = predict_disease(filepath)
-    recommendation = get_recommendation(
-        result["label"],
-        result["confidence"]
-    )
-
-    return jsonify({
-        "prediction": result,
-        "recommendation": recommendation
-    })
+    try:
+        return jsonify(get_prediction_with_recommendation(filepath))
+    finally:
+        remove_temp_file(filepath)
