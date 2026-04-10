@@ -6,7 +6,12 @@ from services.agromonitoring_service import (
     get_soil_data,
     get_weather_forecast,
 )
-from services.disease_advisory_service import get_prediction_with_recommendation
+from services.db_service import save_record
+from services.disease_advisory_service import (
+    build_mandi_summary,
+    build_weather_summary,
+    get_prediction_with_recommendation,
+)
 from services.file_upload_service import remove_temp_file, save_upload_to_temp
 from services.mandi_service import get_mandi_prices
 
@@ -40,6 +45,17 @@ def _parse_int(value, field_name, default, minimum=0):
         raise ValueError(f"{field_name} must be greater than or equal to {minimum}")
 
     return parsed
+
+
+def _has_value(value):
+    return value not in (None, "")
+
+
+def _has_content(response):
+    return any(
+        key in response and response[key]
+        for key in ("prediction", "recommendation", "weather", "mandi")
+    )
 
 
 def _predict_from_upload(file_storage):
@@ -139,17 +155,18 @@ def advisory():
     if image:
         try:
             response.update(_predict_from_upload(image))
-        except RuntimeError as exc:
+        except Exception as exc:
             errors["prediction"] = str(exc)
 
     lat = payload.get("lat")
     lon = payload.get("lon")
-    if lat not in (None, "") or lon not in (None, ""):
+    if _has_value(lat) or _has_value(lon):
         try:
             parsed_lat = _parse_float(lat, "lat")
             parsed_lon = _parse_float(lon, "lon")
-            response["current_weather"] = get_current_weather(parsed_lat, parsed_lon)
-            response["forecast"] = get_weather_forecast(parsed_lat, parsed_lon)
+            current_weather = get_current_weather(parsed_lat, parsed_lon)
+            forecast = get_weather_forecast(parsed_lat, parsed_lon)
+            response["weather"] = build_weather_summary(current_weather, forecast)
         except (ValueError, RuntimeError) as exc:
             errors["weather"] = str(exc)
 
@@ -169,9 +186,9 @@ def advisory():
     include_market = any(value for value in market_fields.values())
     if include_market:
         try:
-            limit = _parse_int(payload.get("limit"), "limit", 10, minimum=1)
+            limit = _parse_int(payload.get("limit"), "limit", 5, minimum=1)
             offset = _parse_int(payload.get("offset"), "offset", 0, minimum=0)
-            response["market_prices"] = get_mandi_prices(
+            market_data = get_mandi_prices(
                 state=market_fields["state"],
                 district=market_fields["district"],
                 market=market_fields["market"],
@@ -179,6 +196,7 @@ def advisory():
                 limit=limit,
                 offset=offset,
             )
+            response["mandi"] = build_mandi_summary(market_data, limit=limit)
         except (ValueError, RuntimeError) as exc:
             errors["market_prices"] = str(exc)
 
@@ -187,6 +205,14 @@ def advisory():
             "Provide at least one of: image, lat/lon, polyid, or market filters",
             400,
         )
+
+    if _has_content(response):
+        try:
+            saved_record = save_record(response)
+            response["record_id"] = saved_record["id"]
+            response["timestamp"] = saved_record["timestamp"]
+        except RuntimeError as exc:
+            errors["history"] = str(exc)
 
     if errors:
         response["errors"] = errors

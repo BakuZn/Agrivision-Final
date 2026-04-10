@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  agrivision:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    env_file:
+      - backend/.env
+    environment:
+      MONGO_URI: mongodb://mongo:27017/
+      MONGO_DB_NAME: agrivision
+      MONGO_COLLECTION_NAME: advisory_history
+    depends_on:
+      - mongo
+    volumes:
+      - ./backend:/app/backend
+      - ./frontend:/app/frontend
+
+volumes:
+  mongo_data:

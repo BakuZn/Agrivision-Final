@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriVision Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="card topbar">
+            <div class="brand-block">
+                <div class="brand-mark">AV</div>
+                <div>
+                    <p class="eyebrow" data-i18n="hero_badge">Premium farm operations dashboard</p>
+                    <h1 class="brand-title">AgriVision</h1>
+                    <p class="brand-copy" data-i18n="hero_copy">
+                        Upload crop images, review live weather, compare mandi prices, and scan schemes from one calm workspace.
+                    </p>
+                </div>
+            </div>
+
+            <div class="topbar-actions">
+                <p class="topbar-label" data-i18n="language_label">Language</p>
+                <div class="language-switch" role="group" aria-label="Language switcher">
+                    <button class="language-button active" type="button" data-language="en">English</button>
+                    <button class="language-button" type="button" data-language="hi">हिंदी</button>
+                    <button class="language-button" type="button" data-language="mr">मराठी</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero-grid">
+            <article class="card hero-card">
+                <span class="chip" data-i18n="hero_chip">Field-ready intelligence</span>
+                <h2 class="hero-title" data-i18n="hero_heading">Field intelligence for faster crop decisions.</h2>
+                <p class="hero-description" data-i18n="hero_description">
+                    This dashboard keeps disease detection, weather, mandi pricing, and government support in one clean operational view.
+                </p>
+
+                <div class="hero-pills">
+                    <span class="pill" data-i18n="pill_disease">Disease + advisory</span>
+                    <span class="pill" data-i18n="pill_weather">Live weather intelligence</span>
+                    <span class="pill" data-i18n="pill_history">Mongo-backed history</span>
+                </div>
+            </article>
+
+            <div class="hero-stats">
+                <article class="card stat-card">
+                    <p class="stat-label" data-i18n="stat_mode_label">Dashboard Mode</p>
+                    <p class="stat-value" data-i18n="stat_mode_value">Single-screen operations</p>
+                </article>
+                <article class="card stat-card">
+                    <p class="stat-label" data-i18n="stat_coverage_label">Coverage</p>
+                    <p class="stat-value" data-i18n="stat_coverage_value">Disease, weather, mandi, schemes</p>
+                </article>
+                <article class="card stat-card">
+                    <p class="stat-label" data-i18n="stat_languages_label">Languages</p>
+                    <p class="stat-value" data-i18n="stat_languages_value">English, Hindi, Marathi</p>
+                </article>
+            </div>
+        </section>
+
+        <nav class="card tab-nav" aria-label="Primary navigation">
+            <button class="tab-button active" type="button" data-tab="disease" data-i18n="nav_disease">Disease Detection</button>
+            <button class="tab-button" type="button" data-tab="weather" data-i18n="nav_weather">Weather</button>
+            <button class="tab-button" type="button" data-tab="mandi" data-i18n="nav_mandi">Mandi Prices</button>
+            <button class="tab-button" type="button" data-tab="schemes" data-i18n="nav_schemes">Government Schemes</button>
+        </nav>
+
+        <div id="feedbackBanner" class="feedback-banner" hidden></div>
+
+        <main class="tab-panels">
+            <section class="tab-panel active" id="tab-disease">
+                <div class="panel-grid panel-grid-disease">
+                    <article class="card section-card">
+                        <div class="section-head">
+                            <div>
+                                <p class="section-eyebrow" data-i18n="disease_section_eyebrow">Advisory Engine</p>
+                                <h3 class="section-title" data-i18n="disease_section_title">Disease Detection</h3>
+                            </div>
+                            <p class="section-copy" data-i18n="disease_section_copy">
+                                Analyze a crop image and blend it with live weather and mandi context.
+                            </p>
+                        </div>
+
+                        <form id="advisoryForm" class="form-grid" enctype="multipart/form-data">
+                            <label class="field full-span">
+                                <span data-i18n="upload_label">Leaf image</span>
+                                <input id="advisoryImage" name="image" type="file" accept="image/*" required>
+                            </label>
+
+                            <label class="field">
+                                <span data-i18n="state_label">State</span>
+                                <select id="advisoryState" name="state"></select>
+                            </label>
+
+                            <label class="field">
+                                <span data-i18n="city_label">City</span>
+                                <select id="advisoryCity"></select>
+                            </label>
+
+                            <label class="field">
+                                <span data-i18n="commodity_label">Commodity</span>
+                                <input id="advisoryCommodity" name="commodity" type="text" value="Tomato">
+                            </label>
+
+                            <label class="field">
+                                <span data-i18n="district_label">District</span>
+                                <input id="advisoryDistrict" name="district" type="text" data-i18n-placeholder="district_placeholder" placeholder="Optional district">
+                            </label>
+
+                            <button id="advisorySubmit" class="primary-button full-span" type="submit" data-i18n="analyze_button">Generate Advisory</button>
+                        </form>
+                    </article>
+
+                    <div class="results-stack">
+                        <article class="card section-card">
+                            <div class="section-head compact">
+                                <div>
+                                    <p class="section-eyebrow" data-i18n="advisory_results_eyebrow">Live Output</p>
+                                    <h3 class="section-title" data-i18n="advisory_results_title">Advisory Result</h3>
+                                </div>
+                            </div>
+                            <div id="advisoryResults" class="render-surface" aria-live="polite"></div>
+                        </article>
+
+                        <article class="card section-card">
+                            <div class="section-head compact">
+                                <div>
+                                    <p class="section-eyebrow" data-i18n="history_section_eyebrow">Stored Reports</p>
+                                    <h3 class="section-title" data-i18n="history_section_title">Recent History</h3>
+                                </div>
+                            </div>
+                            <div id="historyResults" class="render-surface" aria-live="polite"></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tab-panel" id="tab-weather">
+                <div class="panel-grid">
+                    <article class="card section-card">
+                        <div class="section-head">
+                            <div>
+                                <p class="section-eyebrow" data-i18n="weather_section_eyebrow">Climate View</p>
+                                <h3 class="section-title" data-i18n="weather_section_title">Weather</h3>
+                            </div>
+                            <p class="section-copy" data-i18n="weather_section_copy">
+                                Track current conditions and short-term forecast for the selected farm location.
+                            </p>
+                        </div>
+
+                        <form id="weatherForm" class="form-grid">
+                            <label class="field">
+                                <span data-i18n="state_label">State</span>
+                                <select id="weatherState"></select>
+                            </label>
+
+                            <label class="field">
+                                <span data-i18n="city_label">City</span>
+                                <select id="weatherCity"></select>
+                            </label>
+
+                            <button id="weatherSubmit" class="secondary-button full-span" type="submit" data-i18n="load_weather_button">Refresh Weather</button>
+                        </form>
+                    </article>
+
+                    <article class="card section-card">
+                        <div class="section-head compact">
+                            <div>
+                                <p class="section-eyebrow" data-i18n="weather_now_eyebrow">Current Conditions</p>
+                                <h3 class="section-title" data-i18n="weather_now_title">Weather Snapshot</h3>
+                            </div>
+                        </div>
+                        <div id="weatherCurrentResults" class="render-surface" aria-live="polite"></div>
+                    </article>
+                </div>
+
+                <article class="card section-card">
+                    <div class="section-head compact">
+                        <div>
+                            <p class="section-eyebrow" data-i18n="forecast_section_eyebrow">Next Windows</p>
+                            <h3 class="section-title" data-i18n="forecast_section_title">Forecast</h3>
+                        </div>
+                    </div>
+                    <div id="weatherForecastResults" class="render-surface" aria-live="polite"></div>
+                </article>
+            </section>
+
+            <section class="tab-panel" id="tab-mandi">
+                <article class="card section-card">
+                    <div class="section-head">
+                        <div>
+                            <p class="section-eyebrow" data-i18n="mandi_section_eyebrow">Market Intelligence</p>
+                            <h3 class="section-title" data-i18n="mandi_section_title">Mandi Prices</h3>
+                        </div>
+                        <p class="section-copy" data-i18n="mandi_section_copy">
+                            Compare mandi prices using commodity and location filters.
+                        </p>
+                    </div>
+
+                    <form id="mandiForm" class="form-grid">
+                        <label class="field">
+                            <span data-i18n="commodity_label">Commodity</span>
+                            <input id="mandiCommodity" name="commodity" type="text" value="Tomato">
+                        </label>
+
+                        <label class="field">
+                            <span data-i18n="state_label">State</span>
+                            <input id="mandiState" name="state" type="text" data-i18n-placeholder="state_placeholder" placeholder="Optional state">
+                        </label>
+
+                        <label class="field">
+                            <span data-i18n="district_label">District</span>
+                            <input id="mandiDistrict" name="district" type="text" data-i18n-placeholder="district_placeholder" placeholder="Optional district">
+                        </label>
+
+                        <button id="mandiSubmit" class="secondary-button full-span" type="submit" data-i18n="search_prices_button">Load Prices</button>
+                    </form>
+                </article>
+
+                <article class="card section-card">
+                    <div class="section-head compact">
+                        <div>
+                            <p class="section-eyebrow" data-i18n="mandi_table_eyebrow">Latest Listings</p>
+                            <h3 class="section-title" data-i18n="mandi_table_title">Market Table</h3>
+                        </div>
+                    </div>
+                    <div id="mandiResults" class="render-surface" aria-live="polite"></div>
+                </article>
+            </section>
+
+            <section class="tab-panel" id="tab-schemes">
+                <article class="card section-card">
+                    <div class="section-head">
+                        <div>
+                            <p class="section-eyebrow" data-i18n="schemes_section_eyebrow">Support Programs</p>
+                            <h3 class="section-title" data-i18n="schemes_section_title">Government Schemes</h3>
+                        </div>
+                        <p class="section-copy" data-i18n="schemes_section_copy">
+                            Browse relevant programs using crop and state filters.
+                        </p>
+                    </div>
+
+                    <div class="filter-grid">
+                        <label class="field">
+                            <span data-i18n="crop_label">Crop</span>
+                            <select id="schemeCropFilter"></select>
+                        </label>
+
+                        <label class="field">
+                            <span data-i18n="state_label">State</span>
+                            <select id="schemeStateFilter"></select>
+                        </label>
+                    </div>
+                </article>
+
+                <article class="card section-card">
+                    <div id="schemeResults" class="render-surface" aria-live="polite"></div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>

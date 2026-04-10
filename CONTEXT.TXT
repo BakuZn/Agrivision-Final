@@ -5,3 +5,4 @@ agrivision/
 ├── ml_model/
 ├── database/
 ├── docker/
+git push -u origin main
