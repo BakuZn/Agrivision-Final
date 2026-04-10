@@ -1,0 +1,1251 @@
+[
+  {
+    "state": "Andhra Pradesh",
+    "cities": [
+      {
+        "name": "Ambapuram",
+        "lat": 16.599,
+        "lon": 80.8938,
+        "population": 4110,
+        "isCapital": false
+      },
+      {
+        "name": "Vijayavada",
+        "lat": 16.5193,
+        "lon": 80.6305,
+        "population": 1048240,
+        "isCapital": false
+      },
+      {
+        "name": "Vishakhapatnam",
+        "lat": 17.7042,
+        "lon": 83.2978,
+        "population": 2035922,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "cities": [
+      {
+        "name": "Guwahati",
+        "lat": 26.1722,
+        "lon": 91.7458,
+        "population": 1116267,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "cities": [
+      {
+        "name": "Alawalpur",
+        "lat": 25.4958,
+        "lon": 85.2021,
+        "population": 7827,
+        "isCapital": false
+      },
+      {
+        "name": "Babura",
+        "lat": 25.0851,
+        "lon": 87.1092,
+        "population": 4755,
+        "isCapital": false
+      },
+      {
+        "name": "Bali",
+        "lat": 25.481,
+        "lon": 85.2227,
+        "population": 3128,
+        "isCapital": false
+      },
+      {
+        "name": "Gyan Chak",
+        "lat": 25.5496,
+        "lon": 85.2423,
+        "population": 2855,
+        "isCapital": false
+      },
+      {
+        "name": "Harchandi",
+        "lat": 25.1,
+        "lon": 87.0442,
+        "population": 2827,
+        "isCapital": false
+      },
+      {
+        "name": "Harna Buzurg",
+        "lat": 25.0981,
+        "lon": 87.0148,
+        "population": 2579,
+        "isCapital": false
+      },
+      {
+        "name": "Jethuli",
+        "lat": 25.5378,
+        "lon": 85.2841,
+        "population": 11572,
+        "isCapital": false
+      },
+      {
+        "name": "Mahuli",
+        "lat": 25.543,
+        "lon": 85.2268,
+        "population": 6683,
+        "isCapital": false
+      },
+      {
+        "name": "Mirchi",
+        "lat": 25.5554,
+        "lon": 85.2139,
+        "population": 5710,
+        "isCapital": false
+      },
+      {
+        "name": "Muzaffarpur",
+        "lat": 26.1225,
+        "lon": 85.3906,
+        "population": 333200,
+        "isCapital": false
+      },
+      {
+        "name": "Narayanpur Kola",
+        "lat": 25.1293,
+        "lon": 87.0076,
+        "population": 2919,
+        "isCapital": false
+      },
+      {
+        "name": "Nathupur",
+        "lat": 25.5163,
+        "lon": 85.2544,
+        "population": 3129,
+        "isCapital": false
+      },
+      {
+        "name": "Pakri",
+        "lat": 25.5876,
+        "lon": 85.158,
+        "population": 9768,
+        "isCapital": false
+      },
+      {
+        "name": "Patna",
+        "lat": 25.594,
+        "lon": 85.1376,
+        "population": 1684222,
+        "isCapital": true
+      },
+      {
+        "name": "Punadih",
+        "lat": 25.5484,
+        "lon": 85.2649,
+        "population": 8273,
+        "isCapital": false
+      },
+      {
+        "name": "Sabalpur",
+        "lat": 25.6053,
+        "lon": 85.1835,
+        "population": 18810,
+        "isCapital": false
+      },
+      {
+        "name": "Saino",
+        "lat": 25.1134,
+        "lon": 87.0108,
+        "population": 2987,
+        "isCapital": false
+      },
+      {
+        "name": "Shekhpura",
+        "lat": 25.5725,
+        "lon": 85.1428,
+        "population": 2950,
+        "isCapital": false
+      },
+      {
+        "name": "Simli Murarpur",
+        "lat": 25.5792,
+        "lon": 85.2401,
+        "population": 3739,
+        "isCapital": false
+      },
+      {
+        "name": "Sonawan",
+        "lat": 25.5445,
+        "lon": 85.2387,
+        "population": 3682,
+        "isCapital": false
+      },
+      {
+        "name": "Sonudih",
+        "lat": 25.1155,
+        "lon": 87.0214,
+        "population": 5658,
+        "isCapital": false
+      },
+      {
+        "name": "Sultanpur",
+        "lat": 25.5248,
+        "lon": 85.2507,
+        "population": 2473,
+        "isCapital": false
+      },
+      {
+        "name": "Supaul",
+        "lat": 26.126,
+        "lon": 86.605,
+        "population": 2229076,
+        "isCapital": false
+      },
+      {
+        "name": "Tarchha",
+        "lat": 25.1116,
+        "lon": 87.0964,
+        "population": 4198,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Chandigarh",
+    "cities": [
+      {
+        "name": "Chandigarh",
+        "lat": 30.75,
+        "lon": 76.78,
+        "population": 1055450,
+        "isCapital": true
+      }
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "cities": [
+      {
+        "name": "Bilaspur",
+        "lat": 22.09,
+        "lon": 82.15,
+        "population": 1625502,
+        "isCapital": false
+      },
+      {
+        "name": "Raipur",
+        "lat": 21.2444,
+        "lon": 81.6306,
+        "population": 1010087,
+        "isCapital": true
+      }
+    ]
+  },
+  {
+    "state": "Delhi",
+    "cities": [
+      {
+        "name": "Bhalswa Jahangirpur",
+        "lat": 28.7354,
+        "lon": 77.1638,
+        "population": 151427,
+        "isCapital": false
+      },
+      {
+        "name": "Dalupura",
+        "lat": 28.6004,
+        "lon": 77.3194,
+        "population": 132628,
+        "isCapital": false
+      },
+      {
+        "name": "Delhi",
+        "lat": 28.61,
+        "lon": 77.23,
+        "population": 32226000,
+        "isCapital": true
+      },
+      {
+        "name": "Najafgarh",
+        "lat": 28.6092,
+        "lon": 76.9798,
+        "population": 1203180,
+        "isCapital": false
+      },
+      {
+        "name": "Nangloi Jat",
+        "lat": 28.6833,
+        "lon": 77.0667,
+        "population": 150371,
+        "isCapital": false
+      },
+      {
+        "name": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.2089,
+        "population": 249998,
+        "isCapital": true
+      },
+      {
+        "name": "Sultanpur Mazra",
+        "lat": 28.6981,
+        "lon": 77.0689,
+        "population": 163716,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Gujarat",
+    "cities": [
+      {
+        "name": "Ahmedabad",
+        "lat": 23.0225,
+        "lon": 72.5714,
+        "population": 8009000,
+        "isCapital": false
+      },
+      {
+        "name": "Rajkot",
+        "lat": 22.3,
+        "lon": 70.7833,
+        "population": 2043000,
+        "isCapital": false
+      },
+      {
+        "name": "Surat",
+        "lat": 21.1702,
+        "lon": 72.8311,
+        "population": 6538000,
+        "isCapital": false
+      },
+      {
+        "name": "Vadodara",
+        "lat": 22.3,
+        "lon": 73.2,
+        "population": 2065771,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "cities": [
+      {
+        "name": "Faridabad",
+        "lat": 28.4211,
+        "lon": 77.3078,
+        "population": 1414050,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Himachal Pradesh",
+    "cities": [
+      {
+        "name": "Shimla",
+        "lat": 31.1033,
+        "lon": 77.1722,
+        "population": 206575,
+        "isCapital": true
+      }
+    ]
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "cities": [
+      {
+        "name": "Srinagar",
+        "lat": 34.09,
+        "lon": 74.79,
+        "population": 1180570,
+        "isCapital": true
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "cities": [
+      {
+        "name": "Dhanbad",
+        "lat": 23.7998,
+        "lon": 86.4305,
+        "population": 1162472,
+        "isCapital": false
+      },
+      {
+        "name": "Hariladih",
+        "lat": 23.7333,
+        "lon": 86.4,
+        "population": 7917,
+        "isCapital": false
+      },
+      {
+        "name": "Jamshedpur",
+        "lat": 22.7925,
+        "lon": 86.1842,
+        "population": 1558000,
+        "isCapital": false
+      },
+      {
+        "name": "Ranchi",
+        "lat": 23.36,
+        "lon": 85.33,
+        "population": 1073440,
+        "isCapital": true
+      },
+      {
+        "name": "Sijua",
+        "lat": 23.7762,
+        "lon": 86.3303,
+        "population": 39372,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Karnataka",
+    "cities": [
+      {
+        "name": "Abbigeri",
+        "lat": 13.0767,
+        "lon": 77.525,
+        "population": 100000,
+        "isCapital": false
+      },
+      {
+        "name": "Adakimaranhalli",
+        "lat": 13.0633,
+        "lon": 77.4417,
+        "population": 2453,
+        "isCapital": false
+      },
+      {
+        "name": "Arshakunti",
+        "lat": 13.0785,
+        "lon": 77.4225,
+        "population": 6262,
+        "isCapital": false
+      },
+      {
+        "name": "Bagalur",
+        "lat": 13.133,
+        "lon": 77.666,
+        "population": 7519,
+        "isCapital": false
+      },
+      {
+        "name": "Bangalore",
+        "lat": 12.9789,
+        "lon": 77.5917,
+        "population": 15386000,
+        "isCapital": true
+      },
+      {
+        "name": "Bayandhalli",
+        "lat": 12.9779,
+        "lon": 77.5688,
+        "population": 5118,
+        "isCapital": false
+      },
+      {
+        "name": "Bendravadi",
+        "lat": 12.3636,
+        "lon": 76.9137,
+        "population": 2684,
+        "isCapital": false
+      },
+      {
+        "name": "Byatarayanpur",
+        "lat": 13.0659,
+        "lon": 77.5922,
+        "population": 239902,
+        "isCapital": false
+      },
+      {
+        "name": "Cachohalli",
+        "lat": 13.001,
+        "lon": 77.4717,
+        "population": 2946,
+        "isCapital": false
+      },
+      {
+        "name": "Chik Banavar",
+        "lat": 13.0846,
+        "lon": 77.5014,
+        "population": 14409,
+        "isCapital": false
+      },
+      {
+        "name": "Dasarhalli",
+        "lat": 13.0465,
+        "lon": 77.513,
+        "population": 349720,
+        "isCapital": false
+      },
+      {
+        "name": "Doddajivanhalli",
+        "lat": 13.0086,
+        "lon": 77.6143,
+        "population": 3792,
+        "isCapital": false
+      },
+      {
+        "name": "Herohalli",
+        "lat": 12.9911,
+        "lon": 77.4873,
+        "population": 23851,
+        "isCapital": false
+      },
+      {
+        "name": "Hesarghatta",
+        "lat": 13.1391,
+        "lon": 77.4783,
+        "population": 9485,
+        "isCapital": false
+      },
+      {
+        "name": "Hunasamaranhalli",
+        "lat": 13.1435,
+        "lon": 77.62,
+        "population": 9741,
+        "isCapital": false
+      },
+      {
+        "name": "Huttanhalli",
+        "lat": 13.1651,
+        "lon": 77.6512,
+        "population": 3240,
+        "isCapital": false
+      },
+      {
+        "name": "Jalhalli",
+        "lat": 13.0333,
+        "lon": 77.55,
+        "population": 13063,
+        "isCapital": false
+      },
+      {
+        "name": "Kadabgeri",
+        "lat": 12.9965,
+        "lon": 77.4331,
+        "population": 4573,
+        "isCapital": false
+      },
+      {
+        "name": "Kadiganahalli",
+        "lat": 13.1687,
+        "lon": 77.6283,
+        "population": 7225,
+        "isCapital": false
+      },
+      {
+        "name": "Kammanhalli",
+        "lat": 13.0155,
+        "lon": 77.6381,
+        "population": 4144,
+        "isCapital": false
+      },
+      {
+        "name": "Kasgatpur",
+        "lat": 13.1101,
+        "lon": 77.5045,
+        "population": 2852,
+        "isCapital": false
+      },
+      {
+        "name": "Kitanelli",
+        "lat": 13.0095,
+        "lon": 77.4191,
+        "population": 2827,
+        "isCapital": false
+      },
+      {
+        "name": "Kodagihalli",
+        "lat": 12.9771,
+        "lon": 77.4651,
+        "population": 2585,
+        "isCapital": false
+      },
+      {
+        "name": "Madavar",
+        "lat": 13.0525,
+        "lon": 77.4732,
+        "population": 4678,
+        "isCapital": false
+      },
+      {
+        "name": "Madnaikanhalli",
+        "lat": 13.0626,
+        "lon": 77.4642,
+        "population": 7805,
+        "isCapital": false
+      },
+      {
+        "name": "Mailanhalli",
+        "lat": 13.1863,
+        "lon": 77.6963,
+        "population": 2543,
+        "isCapital": false
+      },
+      {
+        "name": "Sondekoppa",
+        "lat": 13,
+        "lon": 77.3667,
+        "population": 4866,
+        "isCapital": false
+      },
+      {
+        "name": "Sonnappanhalli",
+        "lat": 13.1557,
+        "lon": 77.6179,
+        "population": 3996,
+        "isCapital": false
+      },
+      {
+        "name": "Vajarhalli",
+        "lat": 13.1022,
+        "lon": 77.4111,
+        "population": 3009,
+        "isCapital": false
+      },
+      {
+        "name": "Yelahanka",
+        "lat": 13.1007,
+        "lon": 77.5963,
+        "population": 119891,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Madhya Pradesh",
+    "cities": [
+      {
+        "name": "Bhopal",
+        "lat": 23.2599,
+        "lon": 77.4126,
+        "population": 1798218,
+        "isCapital": true
+      },
+      {
+        "name": "Gwalior",
+        "lat": 26.2124,
+        "lon": 78.1772,
+        "population": 1069276,
+        "isCapital": false
+      },
+      {
+        "name": "Indore",
+        "lat": 22.7167,
+        "lon": 75.8472,
+        "population": 1994397,
+        "isCapital": false
+      },
+      {
+        "name": "Jabalpur",
+        "lat": 23.1667,
+        "lon": 79.9333,
+        "population": 1267564,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "cities": [
+      {
+        "name": "Andheri",
+        "lat": 19.2104,
+        "lon": 73.0464,
+        "population": 2937,
+        "isCapital": false
+      },
+      {
+        "name": "Aurangabad",
+        "lat": 19.88,
+        "lon": 75.32,
+        "population": 1175116,
+        "isCapital": false
+      },
+      {
+        "name": "Bhayandar",
+        "lat": 19.29,
+        "lon": 72.85,
+        "population": 809378,
+        "isCapital": false
+      },
+      {
+        "name": "Kalyan",
+        "lat": 19.2502,
+        "lon": 73.1602,
+        "population": 1246381,
+        "isCapital": false
+      },
+      {
+        "name": "Mumbai",
+        "lat": 19.0761,
+        "lon": 72.8775,
+        "population": 24973000,
+        "isCapital": true
+      },
+      {
+        "name": "Nagpur",
+        "lat": 21.1497,
+        "lon": 79.0806,
+        "population": 2405665,
+        "isCapital": false
+      },
+      {
+        "name": "Nasik",
+        "lat": 19.9975,
+        "lon": 73.7898,
+        "population": 1486053,
+        "isCapital": false
+      },
+      {
+        "name": "Pimpri-Chinchwad",
+        "lat": 18.6186,
+        "lon": 73.8037,
+        "population": 1727692,
+        "isCapital": false
+      },
+      {
+        "name": "Pune",
+        "lat": 18.5203,
+        "lon": 73.8567,
+        "population": 8231000,
+        "isCapital": false
+      },
+      {
+        "name": "Thane",
+        "lat": 19.1972,
+        "lon": 72.9722,
+        "population": 1886941,
+        "isCapital": false
+      },
+      {
+        "name": "Vasai-Virar",
+        "lat": 19.3607,
+        "lon": 72.7956,
+        "population": 1221233,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Odisha",
+    "cities": [
+      {
+        "name": "Balasore",
+        "lat": 21.5033,
+        "lon": 86.925,
+        "population": 144373,
+        "isCapital": false
+      },
+      {
+        "name": "Kendraparha",
+        "lat": 20.5,
+        "lon": 86.42,
+        "population": 41404,
+        "isCapital": false
+      },
+      {
+        "name": "Puri",
+        "lat": 19.8,
+        "lon": 85.8167,
+        "population": 201026,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Puducherry",
+    "cities": [
+      {
+        "name": "Puducherry",
+        "lat": 11.9167,
+        "lon": 79.8167,
+        "population": 244377,
+        "isCapital": true
+      }
+    ]
+  },
+  {
+    "state": "Punjab",
+    "cities": [
+      {
+        "name": "Amritsar",
+        "lat": 31.64,
+        "lon": 74.86,
+        "population": 1132383,
+        "isCapital": false
+      },
+      {
+        "name": "Ludhiana",
+        "lat": 30.91,
+        "lon": 75.85,
+        "population": 1618879,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Rajasthan",
+    "cities": [
+      {
+        "name": "Jaipur",
+        "lat": 26.9,
+        "lon": 75.8,
+        "population": 3073350,
+        "isCapital": true
+      },
+      {
+        "name": "Jodhpur",
+        "lat": 26.28,
+        "lon": 73.02,
+        "population": 1033918,
+        "isCapital": false
+      },
+      {
+        "name": "Kota",
+        "lat": 25.18,
+        "lon": 75.83,
+        "population": 1001694,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Tamil Nadu",
+    "cities": [
+      {
+        "name": "Ambattur",
+        "lat": 13.1143,
+        "lon": 80.1548,
+        "population": 466205,
+        "isCapital": false
+      },
+      {
+        "name": "Bommayapalaiyam",
+        "lat": 11.9922,
+        "lon": 79.8499,
+        "population": 8796,
+        "isCapital": false
+      },
+      {
+        "name": "Chennai",
+        "lat": 13.0825,
+        "lon": 80.275,
+        "population": 12395000,
+        "isCapital": true
+      },
+      {
+        "name": "Chinnasekkadu",
+        "lat": 13.1609,
+        "lon": 80.2573,
+        "population": 12854,
+        "isCapital": false
+      },
+      {
+        "name": "Gundur",
+        "lat": 10.7339,
+        "lon": 78.7184,
+        "population": 8587,
+        "isCapital": false
+      },
+      {
+        "name": "Madhavaram",
+        "lat": 13.1482,
+        "lon": 80.2314,
+        "population": 100442,
+        "isCapital": false
+      },
+      {
+        "name": "Madipakkam",
+        "lat": 12.9623,
+        "lon": 80.1986,
+        "population": 20523,
+        "isCapital": false
+      },
+      {
+        "name": "Madurai",
+        "lat": 9.9252,
+        "lon": 78.1198,
+        "population": 1561129,
+        "isCapital": false
+      },
+      {
+        "name": "Manali",
+        "lat": 13.1667,
+        "lon": 80.2667,
+        "population": 37748,
+        "isCapital": false
+      },
+      {
+        "name": "Nanmangalam",
+        "lat": 12.9381,
+        "lon": 80.1753,
+        "population": 4386,
+        "isCapital": false
+      },
+      {
+        "name": "Nerkunram",
+        "lat": 13.0619,
+        "lon": 80.2094,
+        "population": 52570,
+        "isCapital": false
+      },
+      {
+        "name": "Oulgaret",
+        "lat": 11.957,
+        "lon": 79.7737,
+        "population": 300104,
+        "isCapital": false
+      },
+      {
+        "name": "Pallavaram",
+        "lat": 12.9675,
+        "lon": 80.1491,
+        "population": 215417,
+        "isCapital": false
+      },
+      {
+        "name": "Pappakurichchi",
+        "lat": 10.8137,
+        "lon": 78.7481,
+        "population": 26889,
+        "isCapital": false
+      },
+      {
+        "name": "Tiruvottiyur",
+        "lat": 13.16,
+        "lon": 80.3,
+        "population": 249446,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Telangana",
+    "cities": [
+      {
+        "name": "Alija Kotla",
+        "lat": 17.2333,
+        "lon": 78.55,
+        "population": 3000,
+        "isCapital": false
+      },
+      {
+        "name": "Hyderabad",
+        "lat": 17.3617,
+        "lon": 78.4747,
+        "population": 10494000,
+        "isCapital": true
+      },
+      {
+        "name": "Kukatpalli",
+        "lat": 17.4849,
+        "lon": 78.4138,
+        "population": 385821,
+        "isCapital": false
+      },
+      {
+        "name": "Mirpeta",
+        "lat": 17.32,
+        "lon": 78.52,
+        "population": 66982,
+        "isCapital": false
+      },
+      {
+        "name": "Secunderabad",
+        "lat": 17.4399,
+        "lon": 78.4983,
+        "population": 213698,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "cities": [
+      {
+        "name": "Agra",
+        "lat": 27.18,
+        "lon": 78.02,
+        "population": 1585704,
+        "isCapital": false
+      },
+      {
+        "name": "Aligarh",
+        "lat": 27.88,
+        "lon": 78.08,
+        "population": 1131160,
+        "isCapital": false
+      },
+      {
+        "name": "Garhi",
+        "lat": 28.6317,
+        "lon": 77.3186,
+        "population": 75544,
+        "isCapital": false
+      },
+      {
+        "name": "Ghaziabad",
+        "lat": 28.67,
+        "lon": 77.42,
+        "population": 2375820,
+        "isCapital": false
+      },
+      {
+        "name": "Kanpur",
+        "lat": 26.4499,
+        "lon": 80.3319,
+        "population": 2701324,
+        "isCapital": false
+      },
+      {
+        "name": "Khanpur Zabti",
+        "lat": 28.7103,
+        "lon": 77.2781,
+        "population": 6994,
+        "isCapital": false
+      },
+      {
+        "name": "Loni",
+        "lat": 28.75,
+        "lon": 77.28,
+        "population": 516082,
+        "isCapital": false
+      },
+      {
+        "name": "Lucknow",
+        "lat": 26.85,
+        "lon": 80.95,
+        "population": 3382000,
+        "isCapital": true
+      },
+      {
+        "name": "Meerut",
+        "lat": 28.98,
+        "lon": 77.71,
+        "population": 1305429,
+        "isCapital": false
+      },
+      {
+        "name": "Mirzapur",
+        "lat": 25.146,
+        "lon": 82.569,
+        "population": 2496970,
+        "isCapital": false
+      },
+      {
+        "name": "Murtazabad",
+        "lat": 28.7111,
+        "lon": 77.2688,
+        "population": 189117,
+        "isCapital": false
+      },
+      {
+        "name": "Prayagraj",
+        "lat": 25.4358,
+        "lon": 81.8464,
+        "population": 1536218,
+        "isCapital": false
+      },
+      {
+        "name": "Varanasi",
+        "lat": 25.3189,
+        "lon": 83.0128,
+        "population": 1198491,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "Uttarakhand",
+    "cities": [
+      {
+        "name": "Haldwani",
+        "lat": 29.22,
+        "lon": 79.52,
+        "population": 1050000,
+        "isCapital": false
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "cities": [
+      {
+        "name": "Baj Baj",
+        "lat": 22.4828,
+        "lon": 88.1818,
+        "population": 76837,
+        "isCapital": false
+      },
+      {
+        "name": "Bansbaria",
+        "lat": 22.97,
+        "lon": 88.4,
+        "population": 103920,
+        "isCapital": false
+      },
+      {
+        "name": "Barakpur",
+        "lat": 22.76,
+        "lon": 88.37,
+        "population": 152783,
+        "isCapital": false
+      },
+      {
+        "name": "Bauria",
+        "lat": 22.4521,
+        "lon": 88.1853,
+        "population": 16764,
+        "isCapital": false
+      },
+      {
+        "name": "Belgharia",
+        "lat": 22.6581,
+        "lon": 88.3852,
+        "population": 4193,
+        "isCapital": false
+      },
+      {
+        "name": "Bhatpara",
+        "lat": 22.87,
+        "lon": 88.41,
+        "population": 386019,
+        "isCapital": false
+      },
+      {
+        "name": "Chakapara",
+        "lat": 22.63,
+        "lon": 88.35,
+        "population": 35282,
+        "isCapital": false
+      },
+      {
+        "name": "Chandannagar",
+        "lat": 22.87,
+        "lon": 88.38,
+        "population": 166867,
+        "isCapital": false
+      },
+      {
+        "name": "Dam Dam",
+        "lat": 22.62,
+        "lon": 88.42,
+        "population": 114786,
+        "isCapital": false
+      },
+      {
+        "name": "Devanandapur",
+        "lat": 22.9326,
+        "lon": 88.3729,
+        "population": 3449,
+        "isCapital": false
+      },
+      {
+        "name": "Haora",
+        "lat": 22.58,
+        "lon": 88.3294,
+        "population": 1077075,
+        "isCapital": false
+      },
+      {
+        "name": "Kankuria",
+        "lat": 24.6523,
+        "lon": 87.9604,
+        "population": 36925,
+        "isCapital": false
+      },
+      {
+        "name": "Kedihati",
+        "lat": 22.6508,
+        "lon": 88.4608,
+        "population": 3910,
+        "isCapital": false
+      },
+      {
+        "name": "Kolkata",
+        "lat": 22.5675,
+        "lon": 88.37,
+        "population": 18502000,
+        "isCapital": true
+      },
+      {
+        "name": "Krishnanagar",
+        "lat": 23.4,
+        "lon": 88.5,
+        "population": 153062,
+        "isCapital": false
+      },
+      {
+        "name": "Nagtala",
+        "lat": 22.4667,
+        "lon": 88.3833,
+        "population": 10419,
+        "isCapital": false
+      },
+      {
+        "name": "Salt Lake City",
+        "lat": 22.61,
+        "lon": 88.4,
+        "population": 403316,
+        "isCapital": false
+      },
+      {
+        "name": "Salua",
+        "lat": 22.61,
+        "lon": 88.27,
+        "population": 15171,
+        "isCapital": false
+      },
+      {
+        "name": "Santoshpur",
+        "lat": 22.465,
+        "lon": 88.2193,
+        "population": 2808,
+        "isCapital": false
+      },
+      {
+        "name": "Shrirampur",
+        "lat": 22.75,
+        "lon": 88.34,
+        "population": 181842,
+        "isCapital": false
+      },
+      {
+        "name": "Taliganja",
+        "lat": 22.5041,
+        "lon": 88.3598,
+        "population": 4278,
+        "isCapital": false
+      },
+      {
+        "name": "Titagarh",
+        "lat": 22.74,
+        "lon": 88.37,
+        "population": 116541,
+        "isCapital": false
+      },
+      {
+        "name": "Tribeni",
+        "lat": 22.9867,
+        "lon": 88.3987,
+        "population": 3305,
+        "isCapital": false
+      },
+      {
+        "name": "Zeyadah Kot",
+        "lat": 22.4445,
+        "lon": 88.3345,
+        "population": 6457,
+        "isCapital": false
+      }
+    ]
+  }
+]

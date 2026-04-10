@@ -1,0 +1,107 @@
+[
+    {
+        "id": "pm-kisan",
+        "crop": "All Crops",
+        "state": "All India",
+        "title": {
+            "en": "PM-KISAN Income Support",
+            "hi": "पीएम-किसान आय सहायता",
+            "mr": "पीएम-किसान उत्पन्न सहाय्य"
+        },
+        "description": {
+            "en": "Direct income support for eligible farmer families with periodic benefit transfers to strengthen seasonal cash flow.",
+            "hi": "पात्र किसान परिवारों के लिए प्रत्यक्ष आय सहायता, जिससे मौसमी नकदी प्रवाह मजबूत होता है।",
+            "mr": "पात्र शेतकरी कुटुंबांसाठी थेट आर्थिक सहाय्य, ज्यामुळे हंगामी रोख प्रवाह मजबूत होतो."
+        }
+    },
+    {
+        "id": "pmfby",
+        "crop": "All Crops",
+        "state": "All India",
+        "title": {
+            "en": "Pradhan Mantri Fasal Bima Yojana",
+            "hi": "प्रधानमंत्री फसल बीमा योजना",
+            "mr": "प्रधानमंत्री पीक विमा योजना"
+        },
+        "description": {
+            "en": "Crop insurance support to reduce farmer risk from yield losses, weather shocks, and natural calamities.",
+            "hi": "उत्पादन हानि, मौसम झटकों और प्राकृतिक आपदाओं से किसान जोखिम कम करने के लिए फसल बीमा सहायता।",
+            "mr": "उत्पादनातील नुकसान, हवामानातील धक्के आणि नैसर्गिक आपत्तीमुळे होणारा शेतकरी धोका कमी करण्यासाठी पीक विमा सहाय्य."
+        }
+    },
+    {
+        "id": "midh",
+        "crop": "Tomato",
+        "state": "All India",
+        "title": {
+            "en": "Mission for Integrated Development of Horticulture",
+            "hi": "समेकित बागवानी विकास मिशन",
+            "mr": "एकात्मिक फलोत्पादन विकास अभियान"
+        },
+        "description": {
+            "en": "Support for protected cultivation, nurseries, post-harvest infrastructure, and productivity upgrades for horticulture crops.",
+            "hi": "संरक्षित खेती, नर्सरी, कटाई पश्चात ढांचा और बागवानी फसलों की उत्पादकता सुधार के लिए सहायता।",
+            "mr": "संरक्षित शेती, रोपवाटिका, काढणीनंतरची पायाभूत सुविधा आणि फलोत्पादन पिकांच्या उत्पादकतेसाठी सहाय्य."
+        }
+    },
+    {
+        "id": "maha-drip",
+        "crop": "Sugarcane",
+        "state": "Maharashtra",
+        "title": {
+            "en": "Maharashtra Drip Irrigation Support",
+            "hi": "महाराष्ट्र ड्रिप सिंचाई सहायता",
+            "mr": "महाराष्ट्र ठिबक सिंचन सहाय्य"
+        },
+        "description": {
+            "en": "State-linked support for micro-irrigation systems to improve water efficiency in high-input crops such as sugarcane.",
+            "hi": "गन्ने जैसी उच्च निवेश वाली फसलों में जल दक्षता बढ़ाने के लिए सूक्ष्म सिंचाई प्रणालियों हेतु राज्य सहायता।",
+            "mr": "उसासारख्या जास्त इनपुट लागणाऱ्या पिकांसाठी पाण्याचा कार्यक्षम वापर वाढविण्यासाठी सूक्ष्म सिंचनास राज्य सहाय्य."
+        }
+    },
+    {
+        "id": "up-potato",
+        "crop": "Potato",
+        "state": "Uttar Pradesh",
+        "title": {
+            "en": "Uttar Pradesh Potato Development Support",
+            "hi": "उत्तर प्रदेश आलू विकास सहायता",
+            "mr": "उत्तर प्रदेश बटाटा विकास सहाय्य"
+        },
+        "description": {
+            "en": "Support aimed at seed quality, storage linkage, and productivity enhancement for potato farmers in major production belts.",
+            "hi": "मुख्य उत्पादन क्षेत्रों के आलू किसानों के लिए बीज गुणवत्ता, भंडारण संपर्क और उत्पादकता सुधार सहायता।",
+            "mr": "मुख्य उत्पादन पट्ट्यातील बटाटा उत्पादकांसाठी बियाणे गुणवत्ता, साठवण जोडणी आणि उत्पादकता वाढीस सहाय्य."
+        }
+    },
+    {
+        "id": "kar-horti",
+        "crop": "Tomato",
+        "state": "Karnataka",
+        "title": {
+            "en": "Karnataka Horticulture Cluster Support",
+            "hi": "कर्नाटक बागवानी क्लस्टर सहायता",
+            "mr": "कर्नाटक फलोत्पादन क्लस्टर सहाय्य"
+        },
+        "description": {
+            "en": "Cluster-based support for vegetable growers covering irrigation, farm infrastructure, and market linkage improvement.",
+            "hi": "सब्जी उत्पादकों के लिए सिंचाई, खेत ढांचा और बाजार संपर्क सुधार हेतु क्लस्टर आधारित सहायता।",
+            "mr": "भाजीपाला उत्पादकांसाठी सिंचन, शेत पायाभूत सुविधा आणि बाजार जोडणी सुधारण्यासाठी क्लस्टर आधारित सहाय्य."
+        }
+    },
+    {
+        "id": "maha-cotton",
+        "crop": "Cotton",
+        "state": "Maharashtra",
+        "title": {
+            "en": "Cotton Mechanisation and Input Support",
+            "hi": "कपास यंत्रीकरण और इनपुट सहायता",
+            "mr": "कापूस यंत्रीकरण आणि इनपुट सहाय्य"
+        },
+        "description": {
+            "en": "Support for cotton farmers through mechanisation, efficient input use, and better cultivation practices in key districts.",
+            "hi": "मुख्य जिलों में कपास किसानों के लिए यंत्रीकरण, कुशल इनपुट उपयोग और बेहतर खेती पद्धतियों की सहायता।",
+            "mr": "मुख्य जिल्ह्यांतील कापूस उत्पादकांना यंत्रीकरण, परिणामकारक इनपुट वापर आणि सुधारित शेती पद्धतींसाठी सहाय्य."
+        }
+    }
+]
