@@ -85,6 +85,16 @@ Below is the high-resolution, professional forest green confusion matrix generat
 
 ![Confusion Matrix](confusion_matrix.png)
 
+## Screenshots
+
+| Row 1 | |
+|---|---|
+| ![Screenshot 1](img1.jpeg) | ![Screenshot 2](img2.jpeg) |
+
+| Row 2 | | |
+|---|---|---|
+| ![Screenshot 3](img3.jpeg) | ![Screenshot 4](img4.jpeg) | ![Screenshot 5](img5.jpeg) |
+
 
 ##  Future Improvements
 
